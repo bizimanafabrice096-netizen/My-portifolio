@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+
+.header {
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: relative;
+}
+
+.navbar {
+
+    display: fixed;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+}
+
+.home-content h1 {
+    font-size: 50px;
+}
+
+.home-content span {
+    color: #0ef;
+}
+
+.btn-box {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #0ef;
+    color: #081b29;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, #0ef, purple);
+}
+
+.circle img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.sub-title span {
+    color: #0ef;
+}
+
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: #0b2a45;
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    text-align: left;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.2);
+}
+
+.service-card i {
+    font-size: 35px;
+    color: #0ef;
+}
+
+.service-card h2 {
+    margin: 10px 0;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.service-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #0ef;
+    color: #081b29;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #0ef, 0 0 60px rgba(0, 238, 255, 0.5);
+}
+
+
+.text::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 15px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0ef;
+    text-shadow: 0 0 10px #0ef,
+        0 0 20px #0ef;
+}
+
+.social-icons.after {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background-color: rgb(197, 248, 172);
+    margin-bottom: auto;
+
+    padding: 18px;
+    border-radius: 9px;
+
+}
+
+.social-icons.after a {
+    color: #333;
+
+    font-size: 30px;
+
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons.after a:hover {
+    transform: scale(1.2);
+
+}
+
+
+.social-icons.after a:nth-child(1):hover {
+    color: #1877f2;
+}
+
+
+.social-icons.after a:nth-child(2):hover {
+    color: #e4405f;
+}
+
+
+.social-icons.after a:nth-child(3):hover {
+    color: #25d366;
+}
+
+
+.social-icons.after a:nth-child(4):hover {
+    color: #0077b5;
+}
+
+
+.social-icons.after a:nth-child(5):hover {
+    color: #000000;
+}
+
+
+#skills-chart {
+    padding: 100px 10%;
+    text-align: center;
+    background: #071c2f;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.skills-box {
+    flex: 1;
+    min-width: 300px;
+    background: #0b2a45;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.2);
+}
+
+.skills-box h2 {
+    margin-bottom: 20px;
+    color: #0ef;
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ededed;
+    text-align: left;
+}
+
+.progress {
+    background: #081b29;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+    position: relative;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #0ef, purple);
+    border-radius: 10px;
+    transition: width 0.6s ease;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
